@@ -1,3 +1,4 @@
+/*We had a sorted list. Someone changed one element. Write funtion with repair this list */
 #include <iostream>
 using namespace std;
 const int N=15;
