@@ -8,7 +8,7 @@ struct node
     node *next;
 };
 
-void StworzListe(node *&f, int tab[N])
+void CreateList(node *&f, int tab[N])
 {
     f=new node;
     node *l=f;
@@ -25,7 +25,7 @@ void StworzListe(node *&f, int tab[N])
     l->next=NULL;
 }
 
-void WyswietlListe (node *f)
+void ShowList (node *f)
 {
     while (f!=NULL)
     {
@@ -88,24 +88,13 @@ int main()
 {
     node *f;
     int tab[N]= {1, 3, 4, 8, 9, 11, 1344, 15, 17, 20, 21, 22, 23, 28, 29};
-    StworzListe(f, tab);
-    cout<<"Tak poczatkowo wyglada nasza lista"<<endl;
-    WyswietlListe (f);
+    CreateList(f, tab);
+    
+    cout<<"Tak poczatkowo wyglada nasza lista:"<<endl;
+    ShowList (f);
 
-    /*
-    OdwrocListe(f);
-    cout<<"Tak odwrociliscie wyglada nasza lista"<<endl; */
-    //swietlListe (f);
-
-    /*cout<<"Posortowane"<<endl;
-    SortowaniePrzezWstawianie(f);
-    WyswietlListe (f); */
-
-    cout<<"popraiwilem"<<endl;
-    cout<<RepairSortList (f)<<endl;
+    cout<<"Tak wyglada popraiwiona lista:"<<endl;
     f=RepairSortList(f);
-    //PoprawiamListe(f);
-    WyswietlListe (f);
-
+    ShowList (f);
 }
 
