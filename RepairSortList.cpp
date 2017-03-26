@@ -90,10 +90,10 @@ int main()
     int tab[N]= {1, 3, 4, 8, 9, 11, 1344, 15, 17, 20, 21, 22, 23, 28, 29};
     CreateList(f, tab);
     
-    cout<<"Tak poczatkowo wyglada nasza lista:"<<endl;
+    cout<<"That's how it looks like at the begginning:"<<endl;
     ShowList (f);
 
-    cout<<"Tak wyglada popraiwiona lista:"<<endl;
+    cout<<"After correction:"<<endl;
     f=RepairSortList(f);
     ShowList (f);
 }
