@@ -1,4 +1,4 @@
-/*We had a sorted list. Someone changed one element. Write funtion whitch repair this list */
+/*We had a sorted list. Someone changed one element. Write funtion whitch repairs this list */
 #include <iostream>
 using namespace std;
 const int N=15;
